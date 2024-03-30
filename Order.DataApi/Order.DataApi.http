@@ -1,0 +1,6 @@
+@Order.DataApi_HostAddress = http://localhost:5206
+
+GET {{Order.DataApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

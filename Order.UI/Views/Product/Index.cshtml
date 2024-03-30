@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Order.Entity.Product>
+
+	<div class="container">
+
+		<Table class="table-striped">
+
+			<thead>
+				<tr>
+					<td>Product Name </td>
+				<td>Product Category </td>
+				<td>Product Description </td>
+				<td>Product Price </td>
+				<td>Actions</td>
+
+				</tr>
+			</thead>
+			<tbody>
+				@foreach(var item in Model)
+			{
+				<tr>
+					<td>@item.Name </td>
+				<td>@item.Category </td>
+					<td>@item.Details </td>
+					<td>@item.Price </td>
+				<td>Actions</td>
+				</tr>
+				
+			}
+
+
+			</tbody>
+
+
+
+
+		</Table>
+
+
+	</div>
